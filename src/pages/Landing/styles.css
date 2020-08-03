@@ -1,7 +1,12 @@
+body {
+  background: var(--color-primary) !important;
+}
+
 #page-landing {
   width: 100vw;
-  height: 100vh;
-  
+  height: auto;
+  padding: 50px 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,10 +24,8 @@
 }
 
 .logo-container {
-  
   text-align: center;
   margin-bottom: 3.2rem;
-
 }
 
 .logo-container h2 {
@@ -43,7 +46,7 @@
   height: 10.4rem;
   border-radius: 0.8rem;
 
-  font: 700 2.0rem Archivo;
+  font: 700 2rem Archivo;
 
   display: flex;
   align-items: center;
@@ -96,6 +99,10 @@
 }
 
 @media (min-width: 1100px) {
+  #page-landing {
+    height: 100vh;
+    padding: 0;
+  }
   #page-landing-content {
     max-width: 1100px;
 
@@ -104,8 +111,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:
       "logo hero hero"
-      "buttons buttons total"
-    ;
+      "buttons buttons total";
   }
 
   .logo-container {
@@ -113,7 +119,6 @@
     align-self: center;
     text-align: left;
     margin: 0;
-
   }
 
   .logo-container h2 {
