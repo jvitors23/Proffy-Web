@@ -31,11 +31,10 @@ html,
 body,
 #root {
   height: auto;
+  background-color: var(--color-background);
 }
 
-body {
-  background: var(--color-background);
-}
+
 
 #root {
   display: flex;
